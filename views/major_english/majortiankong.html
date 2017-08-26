@@ -1,0 +1,102 @@
+{% extends '../engine/part_all_tiankong.html'%}
+{% block content %}
+<div class="content-concrete">
+  <div class="left-frame-button">
+    <div class="into-frame">专业完形</div>
+  </div>
+  <div class="center-frame-pic">
+    {% for topic in results %}
+    <h3 class="caption-title">
+      <!--题目名称放在这里-->
+      {{ topic.content_title }}
+    </h3>
+    <div class="some-little-word">
+      <span class="first-p common-text">
+        <!--正文放在这里-->
+        {{ topic.main_content }}
+      </span>
+    </div>
+    <div class="square">
+      <div class="left-square frame-square">
+        {% for answer in topic.answer_choose_list %}
+        {% if loop.index <= 7 %}
+        <p><!--这里是供选择的答案-->
+          {{ convert[loop.index-1] + ' ' + answer}}
+        </p>
+        {% endif %}
+        {% endfor %}
+      </div>
+      <div class="right-square frame-square">
+        {% for answer in topic.answer_choose_list %}
+        {% if loop.index > 7 %}
+        <p><!--这里是供选择的答案-->
+          {{ convert[loop.index-1] + ' ' + answer}}
+        </p>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="user-select">
+      <h3 style="padding-left: 20px">请将答案填写在下方对应的方框内</h3>
+      <ul>
+        <li>
+          <input type="text" placeholder="1">
+        </li>
+        <li>
+          <input type="text" placeholder="2">
+        </li>
+        <li>
+          <input type="text" placeholder="3">
+        </li>
+        <li>
+          <input type="text" placeholder="4">
+        </li>
+        <li>
+          <input type="text" placeholder="5">
+        </li>
+        <li>
+          <input type="text" placeholder="6">
+        </li>
+        <li>
+          <input type="text" placeholder="7">
+        </li>
+        <li>
+          <input type="text" placeholder="8">
+        </li>
+        <li>
+          <input type="text" placeholder="9">
+        </li>
+        <li>
+          <input type="text" placeholder="10">
+        </li>
+        <li>
+          <button type="button" class="sure-answer" style="width: 100px;font-size: 16px";>确定</button>
+        </li>
+      </ul>
+    </div>
+    <div class="answer" style="display: none">
+      <span>参考答案如下所示</span>
+      <span>绿色代表正确，红色代表错误哦~</span>
+      <ul>
+        {% for the_true_answer in topic.true_answer %}
+        <li>{{ loop.index + '.' + the_true_answer }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="right-frame-button"></div>
+  <div class="next-topic">
+    {% if page <= 1%}
+    <span class="tips-1">没有上一题了</span>
+    {% else%}
+    <a class="tips-1" href="/practice/part4/majortiankong?page={{ page - 1 }}"><--上一题</a>
+    {% endif %}
+    {% if page >= page_sum %}
+    <span class="tips-2">没有下一题了</span>
+    {% else %}
+    <a class="tips-2" href="/practice/part4/majortiankong?page={{ page + 1 }}">下一题--></a>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录界面</title>
+		<link rel="stylesheet" href="css/loading-other1.css" />
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			body{
+				background-image: url(/img/loading.jpg) ;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="content">
+			<div class="word-title">登录
+			</div>
+			<div class="similiar">本系统的管理员大人无须注册,可直接登录</div>
+			<div class="input-frame">
+				<div class="logo-title">欢迎来到本科生在线学习系统!</div>
+				<div class="input-frame-box">
+					<input type="text"  class="othername input-box-same" id="username" placeholder="昵称" name="username"/>
+				</div>
+				<div class="input-frame-box">
+					<input type="text"  class="password input-box-same" id="password" placeholder="密码" name="password"/>
+				</div>	
+			</div>
+			<div class="sub-button"><a href="javascript:;" class="btn-default" id="login">登录</a></div>
+			<div class="similiar otherfont">还没有账号？<span><a href="/register">注册</a></span></div>
+		</div>
+    <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script src="/js/login.js"></script>
+	</body>
+</html>

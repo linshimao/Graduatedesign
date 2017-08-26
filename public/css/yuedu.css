@@ -1,0 +1,54 @@
+.content-concrete {
+  height: 1168px;
+  width: 90%;
+  overflow: hidden;
+  margin:0 auto;
+}
+.into-frame{
+  padding-top: 418px;
+}
+.center-frame-pic{
+  font-size: 13px;
+}
+.center-frame-pic .some-little-word {
+  width: 567px;
+  height: 83px;
+  text-indent: 20px;
+  margin-left:171px;
+}
+.center-frame-pic .into-some-word {
+  display: inline-block;
+  margin-left: -71px;
+}
+.center-frame-pic .most-word {
+  width: 700px;
+  display: inline-block;
+  margin-left:30px;
+  text-indent: 26px;
+}
+.choose {
+  display: inline-block;
+
+}
+.choose p{
+  line-height: 10px;
+}
+.answer {
+  width: 80%;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+.answer span{
+  font-size: 18px;
+}
+.answer .little-cup {
+  position: absolute;
+  top: 5px;
+  left: 40px;
+}
+.choosen {
+  margin-left: 53px;
+  margin-top: -8px;
+  display: block;
+}

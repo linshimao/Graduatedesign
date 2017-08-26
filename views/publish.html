@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>发布事务界面</title>
+  <style>
+    *{
+      padding:0;
+      margin: 0;
+    }
+    body {
+      background: #f7f8fa;
+      font-size: 16px;
+      color: #999b9b;
+    }
+    .left-logo {
+      width: 150px;
+      height: 150px;
+      background: url("/img/pub02.png") no-repeat;
+      background-position: 0 0;
+      float: left;
+    }
+    .big-title {
+      font-size: 34px;
+      color: #847676;
+      width: 70%;
+      height: 150px;
+      line-height:150px;
+    }
+
+    .little-title{
+      margin-left: 150px;
+    }
+    .right-logo {
+      width: 350px;
+      height: 700px;
+      background: url("/img/pub01.png") no-repeat;
+      background-position: right top;
+      float: right;
+    }
+    .all-box {
+      width: 90%;
+      overflow: hidden;
+      position: absolute;
+      top: 200px;
+      right:0;
+    }
+    .all-graph {
+      width: 70%;
+      height: 100%;
+      float: left;
+    }
+    .same-style {
+      width: 100%;
+      height: 47px;
+      border: 1px solid #c4c6ca;
+      border-radius: 8px;
+      margin-bottom: 80px;
+      position: relative;
+    }
+    .input-frame-box{
+      display: inline-block;
+      width: 99%;
+      height: 29px;
+      border: 0;
+      outline: none;
+      font-size: 17px;
+      position: absolute;
+      left: 8px;
+      top: 8px;
+      padding: 8px;
+      box-sizing: border-box;
+      background-color: #f7f8fa;
+    }
+    .first-style{
+      margin-top: 20px;
+    }
+    input[type=button],
+    input[type=reset] {
+      display: inline-block;
+      width: 175px;
+      height: 40px;
+      background-color: #487296;
+      color: #fff;
+      font-size: 18px;
+      border-radius: 6px;
+      margin-left: 160px;
+      margin-top: 60px;
+    }
+
+    textarea {
+      width: 97%;
+      height: 100px;
+      boder: 0;
+      padding: 8px;
+      font-size: 18px;
+      background-color: #f7f8fa;
+    }
+    .true-answer,
+    .choose-list {
+      padding-top: 20px;
+    }
+    .true-answer ul,
+    .choose-list ul {
+      padding-top: 15px;
+    }
+    .true-answer ul::after,
+    .choose-list ul::after,
+    body::after
+    {
+      content: '';
+      height: 0;
+      display: table;
+      clear: both;
+    }
+    .true-answer ul li{
+      width: 30px;
+      height: 30px;
+      list-style: none;
+      float: left;
+    }
+    .true-answer ul li input,
+    .choose-list ul li input{
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+
+    .choose-list ul li {
+      float: left;
+      list-style: none;
+      width: 60px;
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+<div class="left-logo"></div>
+<div class="big-title">题型发布</div>
+<span class="little-title">分享点点滴滴的成长之路!</span>
+<div class="all-box">
+  <form class="all-graph">
+    <div class="same-style">
+      <select class="input-frame-box" name="main-classification" id="main-classification">
+        <option value="0">分类</option>
+        <option value="1">1、四、六级英语</option>
+        <option value="2">2、考研英语</option>
+        <option value="3">3、雅思英语</option>
+        <option value="4">4、专业英语</option>
+      </select>
+    </div>
+    <div class="same-style">
+      <select class="input-frame-box" name="secondary-classification" id="secondary-classification">
+        <option value="0">题型选择</option>
+        <option value="1">1、完型填空</option>
+        <option value="2">2、阅读理解</option>
+        <option value="3">3、作文训练</option>
+      </select>
+    </div>
+    <div class="same-style first-style">
+      <input class="input-frame-box" id="content-title" type="text" placeholder="题目名称" name="content-title">
+    </div>
+    <div class="big-word">
+      <textarea id="main-content" placeholder="正文"></textarea>
+    </div>
+    <div class="choose-list">
+      <h3>选项</h3>
+      <ul>
+        <li><input type="text" placeholder="A"></li>
+        <li><input type="text" placeholder="B"></li>
+        <li><input type="text" placeholder="C"></li>
+        <li><input type="text" placeholder="D"></li>
+        <li><input type="text" placeholder="E"></li>
+        <li><input type="text" placeholder="F"></li>
+        <li><input type="text" placeholder="G"></li>
+        <li><input type="text" placeholder="I"></li>
+        <li><input type="text" placeholder="J"></li>
+        <li><input type="text" placeholder="K"></li>
+        <li><input type="text" placeholder="L"></li>
+        <li><input type="text" placeholder="M"></li>
+        <li><input type="text" placeholder="N"></li>
+        <li><input type="text" placeholder="O"></li>
+      </ul>
+    </div>
+    <div class="true-answer">
+      <h3>正确答案</h3>
+      <ul>
+        <li><input type="text" placeholder="1"></li>
+        <li><input type="text" placeholder="2"></li>
+        <li><input type="text" placeholder="3"></li>
+        <li><input type="text" placeholder="4"></li>
+        <li><input type="text" placeholder="5"></li>
+        <li><input type="text" placeholder="6"></li>
+        <li><input type="text" placeholder="7"></li>
+        <li><input type="text" placeholder="8"></li>
+        <li><input type="text" placeholder="9"></li>
+        <li><input type="text" placeholder="10"></li>
+      </ul>
+    </div>
+    <input id="publish" type="button" value="发布">
+    <input type="reset" value="取消">
+  </form>
+  <div class="right-logo"></div>
+</div>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+<script src="/js/publish.js"></script>
+</body>
+</html>

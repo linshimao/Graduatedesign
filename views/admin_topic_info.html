@@ -1,0 +1,43 @@
+{% extends 'common.html'%}
+{% block main %}
+<h3>题库管理中心</h3>
+<section id="topic-list">
+  <table>
+    <tr>
+      <th>题名</th>
+      <th>所属分类</th>
+      <th>题型</th>
+      <th>发布时间</th>
+      <th>操作</th>
+    </tr>
+
+    {% for topic in topics %}
+      <tr>
+          <td>{{ topic.content_title }}</td>
+          <td>{{ topic.main_classification }}</td>
+          <td>{{ topic.secondary_classification }}</td>
+          <td>{{ topic.push_time | fliter_date }}</td>
+          <td>
+            <select name="" id="">
+              <option value="0">分类修改</option>
+              <option value="1、四、六级英语">1、四、六级英语</option>
+              <option value="2、考研英语">2、考研英语</option>
+              <option value="3、雅思英语">3、雅思英语</option>
+              <option value="4、专业英语">4、专业英语</option>
+            </select>
+            <select name="" id="">
+              <option value="0">题型修改</option>
+              <option value="1、完型填空">1、完型填空</option>
+              <option value="2、阅读理解">2、阅读理解</option>
+              <option value="3、作文训练">3、作文训练</option>
+            </select>
+            <button type="button" class="save-edit" data-topic-id="{{ topic._id }}">保存</button>
+            <button type="button" class="del-topic" data-topic-id="{{ topic._id }}">删除</button>
+          </td>
+      </tr>
+    {% endfor %}
+
+  </table>
+</section>
+
+{% endblock %}

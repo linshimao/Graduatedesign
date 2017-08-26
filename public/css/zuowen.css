@@ -1,0 +1,27 @@
+.content-concrete {
+  height: 853px;
+  width: 90%;
+  overflow: hidden;
+  margin:0 auto;
+}
+.into-frame{
+  padding-top: 266px;
+}
+.center-frame-pic{
+  font-size: 13px;
+}
+.center-frame-pic .some-little-word {
+  width: 567px;
+  height: 83px;
+  text-indent: 20px;
+  margin-left:171px;
+}
+.center-frame-pic .into-some-word {
+  display: inline-block;
+  margin-left: -71px;
+}
+.center-frame-pic .most-word {
+  width: 700px;
+  display: inline-block;
+  margin-left:-144px;
+}

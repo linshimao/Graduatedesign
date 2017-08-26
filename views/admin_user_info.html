@@ -1,0 +1,26 @@
+{% extends 'common.html'%}
+{% block main %}
+
+<section id="user-list">
+  <h3>用户管理</h3>
+  <table>
+    <tr>
+      <th>用户名</th>
+      <th>密码</th>
+      <th>学校</th>
+      <th>操作</th>
+    </tr>
+    {% for user in users %}
+      {% if user.username != 'admin' %}
+        <tr>
+            <td>{{ user.username }}</td>
+            <td>{{ user.password }}</td>
+            <td>{{ user.school }}</td>
+            <td><button class="user-remove" data-user-id="{{ user._id }}">删除</button></td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+  </table>
+</section>
+
+{% endblock %}

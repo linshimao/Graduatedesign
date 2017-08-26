@@ -1,0 +1,64 @@
+.content{
+	width: 550px;
+	height: 550px;
+	background-color: white;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.word-title{
+	font-size: 20px;
+	text-align: center;
+	margin-top: 44px;
+}
+.input-frame{
+	width: 352px;
+	height: 223px;
+	margin: 40px auto;
+}
+.input-frame-box{
+	width: 352px;
+	height: 47px;
+	border: 1px solid #c4c6ca;
+	border-radius: 8px;
+	margin-bottom: 25px;
+	position: relative;
+}
+.input-box-same{
+	display: inline-block;
+	width: 290px;
+	height: 29px;
+	border: 0;
+	outline: none;
+	font-size: 17px;
+	position: absolute;
+	left: 8px;
+	top: 8px;
+	padding: 8px;
+	box-sizing: border-box;
+}
+/*.two-button{*/
+	/*width: 64%;*/
+	/*margin: 0 auto;*/
+/*}*/
+button{
+	width: 140px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin: 0 auto;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 18px;
+}
+button[type=button]{
+	float: left;
+	background: #3cb9bf;
+}
+button[type=reset]{
+	float: right;
+	background: #ada5b5;
+}
+button[type=reset]:hover{
+	background: #3cb9bf;
+}

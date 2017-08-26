@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>本科生在线英语学习系统</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/header.css" >
+		<link rel="stylesheet" href="css/category.css" >
+		<link rel="stylesheet" href="css/font-set.css" >
+		<link rel="stylesheet" href="css/concrete.css" >
+		<link rel="stylesheet" href="css/logo-botton-line.css" >
+		<link rel="stylesheet" href="css/loading-index.css" >
+		<link rel="stylesheet" href="css/footer.css">
+		<style type="text/css">
+			*{
+				padding:0;
+				margin: 0;
+				font-family: "微软雅黑","Helvetica Neue",Helvetica Neue,Helvetica,Arial,sans-serif;
+			}
+			body{
+				background-color: #e8f5f2;
+			}
+		</style>
+	</head>
+	<body>
+		<!--导航的首页的登陆-->
+		<div class="header">
+		<div class="logo">
+			<div class="left-logo"><img src="img/logo.png"/></div>
+				<!--<i class="glyphicon glyphicon-user sign1"></i>-->
+      {% if (userInfos.username == undefined) %}
+        <i class="fa fa-user sign1" aria-hidden="true"></i>
+				<!--<i class="glyphicon glyphicon-lock sign2"></i>-->
+        <i class="fa fa-registered sign2" aria-hidden="true"></i>
+      {% endif %}
+			<div class="right_logo">
+				<ul>
+          {% if userInfos %}
+					<li>
+						<i class="fa fa-user sign1" aria-hidden="true" style="top: 4px;"></i>
+						{% if userInfos.username == 'admin' %}
+						<a href="/admin/admin_manage">{{userInfos.username}}</a>
+						{% else %}
+						<a href="/admin/user_message">{{userInfos.username}}</a>
+						{% endif %}
+          </li>
+          {% else %}
+          <li>
+            <a href="/login">登录</a>
+          </li>
+          <li>
+            <a href="/register">注册</a>
+          </li>
+          {% endif %}
+				</ul>
+			</div>	
+		</div>
+		<div class="header_pic">
+			<div class="header_frame">
+				<div class="div_category"></div>
+		<!--输入框的设置-->
+				<form class="input_frame">
+					<div class="intial">
+						<input type="hidden" name="search" value="works" />
+						<input type="text " name="key" class="sr-input" placeholder="搜索你想要的内容" />
+					</div>
+					<button type="submit" class="sr-btn">
+						<!--<i class="glyphicon glyphicon-search sign3"></i>-->
+            <i class="fa fa-search sign3" aria-hidden="true"></i>
+					</button>
+				</form>
+			</div>
+		</div></div>
+		<!--分类的图标-->
+		<div class="category">
+				<div class="zc-icon">
+					<div class="title "><a href="#transform" ><span class="icon1">Major</span></a>
+						<div class="zc-font1">
+							<span class="font-active">专业分类</span>
+						</div>
+						<div class="zc-font2">准确抓住你想要的</div>
+					</div>
+					<div class="title"><a href="/questionpractice" target="_blank"><span class="icon3">Write</span></a>
+						<div class="zc-font1">
+							<span class="font-active">题型训练</span>
+						</div>
+						<div class="zc-font2">满足针对性训练的需求</div>
+					</div>
+					<div class="title diff"><a href="/admin/user_message" target="_blank" ><span class="icon-4">Message</span></a>
+						<div class="zc-font1">
+							<span class="font-active">信息管理</span>
+						</div>
+						<div class="zc-font2">快来填满你的魅力值吧</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--分割的字体设置-->
+		<div class="font-set"id="transform">你感兴趣的版块</div>
+		<div class="concrete_title">因网络我们成为共同的学习团体</div>
+		<!--具体的类别的框架-->
+		<div class="total" >
+			<div class="concrete">
+				<div class="white"><a href="/practice/part1" target="_blank"><img src="img/siliu.png" alt="" /></a></div>
+				<div class="title_pic">
+					<img src="img/little.jpg" alt="" />
+					<div class="small-box">
+					<a href="/practice/part1" class="first" style="white-space: nowrap;" target="_blank">四六级英语</a>
+          <a href="javascript:;" class="font_13">本科生在线英语学习系统</a>
+					</div>	
+				</div>
+			</div>
+			<div class="concrete">
+				<div class="white"><a href="/practice/part2" target="_blank"><img src="img/01.png" alt="" /></a></div>
+				<div class="title_pic">
+					<img src="img/little.jpg"/>
+					<div class="small-box">
+					<a href="pubmed/kaoyan.html" class="first" style="white-space: nowrap;">考研类英语</a>
+          <a href="javascript:;" class="font_13">本科生在线英语学习系统</a>
+					</div>
+				</div>
+			</div>
+			<div class="concrete">
+				<div class="white"><a href="/practice/part3" target="_blank"><img src="img/yasi.png" alt="" /></a></div>
+				<div class="title_pic">
+					<a href="#"><img src="img/little.jpg"/></a>
+					<div class="small-box">
+					<a href="ielts/studyyasi.html" class="first" style="white-space: nowrap;">学雅思英语</a>
+          <a href="javascript:;" class="font_13">本科生在线英语学习系统</a>
+					</div>
+				</div>
+			</div>
+			<div class="concrete">
+				<div class="white"><a href="/practice/part4" target="_blank"><img src="img/major.png" alt="" /></a></div>
+				<div class="title_pic">
+					<img src="img/little.jpg"/>
+					<div class="small-box">
+					<a href="major_english/majorenglish.html" class="first" style="white-space: nowrap;">专业类英语</a>
+          <a href="javascript:;" class="font_13" >本科生在线英语学习系统</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--登陆和注册的图标-->
+    {% if userInfos == undefined %}
+		<div class="loading">
+			<!--分界线-->
+			<div class="logo-botton-line"></div>
+			<div class="flexbox">
+				<div class="flex">
+					<form action=""></form>
+					<input type="button"value="现在注册" class="books1" id="reg">
+				</div>
+				<div class="flex">
+					<form action=""></form>
+					<input type="button"value="直接登录" class="books" id="login">
+				</div>
+			</div>
+		</div>
+    {% endif %}
+		<!--防伪的框架-->
+		<div class="footer">
+				<p class="about-title">
+					<strong>本科生在线英语学习系统</strong>
+				</p>
+				<p>这是一个致力于打造本科生简单学习英语的在线学习平台</p>
+				<p>这里能让你看见你所需要的资料，让你快速的加入到学习当中去</p>
+		</div>
+    <script src="/js/btn_login_and_register.js"></script>
+	</body>
+</html>

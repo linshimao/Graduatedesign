@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册界面</title>
+		<link rel="stylesheet" href="css/register.css" />
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			body{
+				background-image: url(../img/loading.jpg) ;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="initial">
+			<div class="register">注册</div>
+			<div class="small same-font-style">本系统的管理员大人无须注册,可直接<span><a href="/login">登录</a></span></div>
+			<div class="input-frame">
+				<div class="input-frame-box">
+					<input type="text"  class="othername input-box-same" placeholder="昵称" id="username" name="username"/>
+				</div>
+				<div class="input-frame-box">
+					<input type="text"  class="password input-box-same" placeholder="密码" id="password" name="password"/>
+				</div>	
+				<div class="input-frame-box">
+					<input type="text"  class="repassword input-box-same" placeholder="再一次输入密码" id="rpassword" name="rpassword"/>
+				</div>
+			</div>
+			<div class="loading-button"><a href="javascript:;" class="btn-default" id="register">注册</a></div>
+			<div class="final-link">已经注册？<span><a href="/login">登录</a></span></div>
+      <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+			<script src="/js/register.js"></script>
+	</body>
+</html>

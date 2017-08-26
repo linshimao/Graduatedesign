@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>信息管理</title>
+		<link rel="stylesheet" href="../css/messagemanager.css" />
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			body{
+				background-image: url(../img/bg2.png) ;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="content">
+			<div class="word-title">个人信息管理</div>
+			<div class="input-frame">
+        <form method="post">
+          <div class="input-frame-box">
+            <input type="text"  class="othername input-box-same" id="username" placeholder="昵称" disabled="disabled" value="{{ userInfos.username }}"/>
+          </div>
+          <div class="input-frame-box">
+            <input type="text"  class="othername input-box-same" id="edit-password" placeholder="新密码" name="edit-password"/>
+          </div>
+          <div class="input-frame-box">
+            <input type="text"  class="password input-box-same" id="school" placeholder="请输入学校名称" name="school" value="{{ userInfos.school }}"/>
+          </div>
+          <div class="two-button">
+            <button type="button" id="save-user-info">保存</button>
+            <button type="reset">取消</button>
+          </div>
+        </form>
+			</div>
+
+		</div>
+    <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+		<script src="/js/user_info.js"></script>
+	</body>
+</html>

@@ -1,0 +1,80 @@
+.content-concrete::after,
+.next-topic::after
+{
+  height: 0;
+  content: '';
+  display: table;
+  clear: both;
+}
+.content-concrete {
+  /*height: 853px;*/
+  width: 90%;
+  /*overflow: hidden;*/
+  margin:0 auto;
+}
+.common-text {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+  text-indent: 32px;
+  display: block;
+}
+.center-frame-pic .first-p {
+  /*padding-left: 170px;*/
+  /*display: block;*/
+  /*text-indent: 32px;*/
+}
+.center-frame-pic .some-little-word {
+  /*width: 567px;*/
+  /*height: 83px;*/
+  /*text-indent: 20px;*/
+  /*margin-left:171px;*/
+  /*padding: 0 40px 0 20px;*/
+}
+.center-frame-pic .into-some-word {
+  /*display: inline-block;*/
+  /*margin-left: -71px;*/
+}
+.center-frame-pic .most-word {
+  /*width: 700px;*/
+  /*display: inline-block;*/
+  /*margin-left:30px;*/
+  /*text-indent: 26px;*/
+}
+.into-frame{
+  padding-top: 100px;
+}
+.square {
+  width: 352px;
+  height: 180px;
+  margin: 30px auto;
+  border: 1px solid #9a8c8c;
+}
+.square .frame-square {
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding-top: 5px;
+  padding-left:5px;
+}
+.square .left-square{
+  border-right: 1px solid #9a8c8c;
+}
+p{
+  line-height: 12px;
+}
+.answer span{
+  color: #a29e9e;
+  font-size: 16px;
+}
+.answer .little-cup {
+  position: absolute;
+  top: 5px;
+  left: 40px;
+}
+.answer div {
+  position: absolute;
+  top: 25px;
+  left: 51px;
+}
+

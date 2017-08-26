@@ -1,0 +1,119 @@
+.left-frame-button {
+  width: 200px;
+  height: 500px;
+  background:url("/img/left-frame.png") no-repeat center center;
+  float: left;
+}
+.into-frame {
+  width: 57px;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 30px;
+  text-align: center;
+  line-height:60px;
+  color: #9b9b9b;
+}
+.center-frame-pic {
+  float: left;
+  width: 765px;
+  height: 100%;
+  background: url("/img/commentbg.png");
+  overflow: hidden;
+  padding: 60px 80px 100px 80px;
+}
+.center-frame-pic .caption-title {
+  /*font-size: 18px;*/
+  /*text-align: center;*/
+  /*display: inline-block;*/
+  /*margin-left: 141px;*/
+  /*margin-top: 23px;*/
+  /*margin-bottom: 20px;*/
+  text-align: center;
+  display: block;
+}
+.right-frame-button {
+  width: 200px;
+  height: 500px;
+  background: url("/img/right-pic.png") no-repeat;
+  background-position: center center;
+  float: left;
+}
+/*.next-topic::after,*/
+/*.next-topic::before{*/
+  /*display: table;*/
+  /*height: 0;*/
+  /*content: '';*/
+/*}*/
+.next-topic {
+  clear: both;
+  width: 700px;
+  margin: 0 auto;
+  /*background-color: #999;*/
+}
+.next-topic a,
+.next-topic span
+{
+  display: block;
+}
+.next-topic .tips-1 {
+  /*text-align: left;*/
+  float: left;
+}
+.next-topic .tips-2 {
+  /*text-align: right;*/
+  float: right;
+  margin-right: 60px;
+
+}
+
+ul::before,
+ul::after {
+  content: '';
+  display: table;
+}
+ul::after {
+  clear: both;
+}
+.answer ul {
+  list-style: none;
+  padding-top: 20px;
+}
+.select-answer {
+  list-style: none;
+}
+.answer ul li {
+  float: left;
+  width: 40px;
+  font-weight: bold;
+}
+.user-select ul li{
+  float: left;
+  width: 40px;
+  list-style: none;
+}
+.user-select ul li>input {
+  width: 100%;
+  text-align: center;
+}
+.sure-answer {
+  width: 85px;
+  height: 32px;
+  font-size: 16px;
+  line-height: 32px;
+  background: #2ed3ef;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left: 60px;
+}
+
+/**
+ * 根据用户答案的对错，运用不同的提示
+ */
+.note-right {
+  color: #10802f;
+}
+.note-error {
+  color: #ff1c17;
+}

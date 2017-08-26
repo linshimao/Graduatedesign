@@ -1,0 +1,46 @@
+.content{
+	width: 1349px;
+	height: 400px;
+}
+.content ul{
+	width: 90%;
+	height: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.content ul a {
+  display: block;
+}
+.content ul>li{
+	list-style: none;
+	width: 33.3%;
+	height: 100%;
+	float: left;
+	/*transition: width 1s;*/
+	position: relative;
+}
+
+.content p{
+	color: #525558;
+	font-size: 18px;
+	position: absolute;
+  transition: height .5s ease;
+	background-color: rgba(133, 179, 177, .6);
+  width: 100%;
+  height: 0;
+  top: 0;
+  text-align: center;
+
+}
+.content .p-text {
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+}
+.content ul>li:hover p {
+  height: 100%;
+}
+

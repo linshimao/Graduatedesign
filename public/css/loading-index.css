@@ -1,0 +1,38 @@
+.loading{
+	width: 94%
+    margin: 0 auto;
+    height: 206px;
+}
+.flexbox{
+	text-align: center;
+    margin: 0 auto;
+    width: 500px;
+    height: 180px;
+    padding: 60px 0 80px 0;
+}
+.flex{
+	width: 247px;
+	height: 40px;
+	display:inline-block;
+	overflow: hidden;
+}
+input[type=button]{
+	width: 140px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin: 0 auto;
+	border: none;
+    border-radius:3px ;
+    color: #fff;
+    font-size: 18px;
+}
+.books1{
+	background-color:#487296 ;
+}
+.books{
+	background-color:#ada5b5;
+}
+.books:hover{
+	background-color:#487296 ;
+}

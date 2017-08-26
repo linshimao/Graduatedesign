@@ -1,0 +1,165 @@
+.logo{
+	width: 1349px;
+	height: 70px;
+	background-color: #fff;
+	position: relative;
+	margin-bottom: 70px;
+}
+.logo>img{
+	position: absolute;
+	top: 0;
+	left: 57px;
+}
+.logo .more-title1{
+	width: 300px;
+	height: 100%;
+	position: absolute;
+	left: 123px;
+	top: 0px;
+	text-align: center;
+}
+.logo .more-title1 ul{
+	width: 300px;
+	height: 100%;
+}
+.logo .more-title1 li{
+	list-style: none;
+	width: 50%;
+	height: 100%;
+	float: left;
+	border-bottom: 1px solid #ffffff;
+	transition: all .5s linear;
+}
+.logo .more-title1 li a{
+	display: inline-block;
+    color: #474747;
+    font-size: 16px;
+    letter-spacing: .025em;
+    white-space: nowrap;
+    padding-top: 24px;
+    text-decoration: none;
+}
+.logo .more-title1 li:hover {
+	border-bottom: 1px solid #487296;
+}
+.logo>.right_logo{
+	height: 23px;
+	width: 200px;
+    position: absolute;
+    top: 3px;
+    right: 0;
+}
+.logo>.right_logo>ul{
+	width: 150px;
+	height: 23px;
+}
+.logo>.right_logo>ul li{
+	width: 63px;
+	height: 23px;
+	float: left;
+	list-style: none;
+    margin-right: 8px;     	
+}
+.logo>.right_logo>ul li>a{
+	text-decoration: none;
+	font-size: 16px;
+    letter-spacing: .025em;
+    white-space: nowrap;
+    height: 70px;
+    line-height: 70px;
+    margin-left: 10px;
+    color:#474747;
+}
+.logo>.right_logo>ul li>a:visited{
+    color: #888;
+}
+.logo>.right_logo>ul li>a:hover{
+	color: #c192a3;
+}
+.sign1{
+	position: absolute;
+	right:202px;
+	top: 31px;
+	z-index: 3;
+}
+.sign2{
+	position: absolute;
+	right: 133px;
+	top:30px;
+	z-index: 3;
+}
+.word-title{
+	width: 1356px;
+	text-align: center;
+	font-size: 28px;
+	letter-spacing: 10px;
+}
+.big-content{
+	width: 1200px;
+	height: 905px;
+	margin: 0 auto;
+	border-top: 1px solid #a59c9c;
+	border-bottom:1px solid #a59c9c ;
+}
+.top-pic-title{
+	width: 1200px;
+	height: 400px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.same-box-size{
+	width: 590px;
+	height: 362px;
+	position: relative;
+	overflow: hidden;
+}
+.left-top{
+	float: left;
+}
+.same-box-size img{
+	margin-right: 5px;
+	transition: all .3s linear;
+}
+.same-box-size img:hover{
+	transform: translate(-40px,0);
+}
+.right-top{
+	float: right;
+}
+.left-buttom{
+	float: left;
+}
+.right-buttom{
+	float: right;
+	border: 1px solid #F0F0F0;
+}
+.word{
+	font-size: 20px;
+    line-height: 3rem;
+    white-space: nowrap;
+    width: 100%;
+}
+.little-word1{
+    position: absolute;
+    top:578px;
+    left: 291px;
+}
+.little-word2{
+    position: absolute;
+    top:578px;
+    left: 950px;
+}
+.little-word3{
+    position: absolute;
+    top:1025px;
+    left: 291px;
+}
+.little-word4{
+    position: absolute;
+    top:1025px;
+    left: 950px;
+}
+.word a{
+	text-decoration: none;
+	color: #717579;
+}
